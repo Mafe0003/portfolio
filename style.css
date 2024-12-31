@@ -5,6 +5,8 @@
   /* background-color: #efefef; */
 }
 
+/*HEADER*/
+
 header {
   position: sticky;
   top: 0;
@@ -73,6 +75,10 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
+
+/* .kontakt {
+   background-color: #fdcc26; 
+} */
 
 @media screen and (max-width: 800px) {
   .burger {
@@ -146,5 +152,153 @@ nav {
   .menu li:nth-child(2),
   .menu li:nth-child(3) {
     margin-right: 20px;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Italiana", serif;
+}
+
+/* FOOTER STYLING */
+footer {
+  background-color: #648ec5;
+  color: white;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+/*OVERVEJ AT FJERNE HOVER EFFEKTEN!!!!!!!*/
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fdcc26;
+}
+
+body footer {
+  position: sticky;
+  top: 100vh;
+}
+
+.kontakt {
+  font-size: 2rem;
+  text-align: center;
+  /*DER ER NOGET PADDING MEN JEG GIVER DEN LIDT MERE FRA TOPPEN*/
+  margin-top: 1rem;
+}
+
+/* FORM STYLING */
+form {
+  /* 20px over og under, 0 højre og venstre*/
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  /* display: block gør at hver element starter på en ny linje*/
+  display: block;
+}
+
+input,
+textarea {
+  background-color: #efefef;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 10px;
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  margin-top: 0.2rem;
+  border-radius: 30px;
+}
+
+.form_felt {
+  margin-bottom: 20px;
+  width: 80%; /* Responsive field width */
+}
+
+.send_knap {
+  font-family: "Just Me Again Down Here", serif;
+  font-size: 2rem;
+  color: #fdcc26;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.send_knap:hover {
+  transform: scale(1.3);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* SOCIALE MEDIER */
+.social_icons {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.social_icons a {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.social_icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.social_icons img:hover {
+  transform: scale(1.3);
+}
+
+p {
+  text-align: center;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 801px) {
+  input {
+    width: 75%;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .kontakt {
+    font-size: 3rem;
+    text-align: center;
+    /*DER ER NOGET PADDING MEN JEG GIVER DEN LIDT MERE FRA TOPPEN*/
+    margin-top: 1rem;
+  }
+
+  label {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  textarea {
+    margin-top: 0.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
   }
 }
