@@ -1,3 +1,4 @@
+// BURGER MENU
 const burger = document.querySelector(".burger");
 const nav = document.querySelector("nav");
 const menu = document.querySelector(".menu");
@@ -13,3 +14,9 @@ function menuClick() {
   burger.classList.remove("active");
   nav.classList.remove("active");
 }
+
+//  SCROLL NED TIL FOOTEREN
+document.querySelector(".kontakt").addEventListener("click", function (e) {
+  e.preventDefault(); // Forhindrer standard linkadfærd
+  document.querySelector("#scroll").scrollIntoView({ behavior: "smooth" });
+});
