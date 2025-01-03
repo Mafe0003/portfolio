@@ -21,7 +21,7 @@ document.querySelector(".kontakt").addEventListener("click", function (e) {
   document.querySelector("#scroll").scrollIntoView({ behavior: "smooth" });
 });
 
-//  SCROLL NED TIL TEMA3
+//  SCROLL NED TIL TEMA2
 document.querySelector(".scroll2").addEventListener("click", function (e) {
   e.preventDefault();
   document.querySelector("#tema2").scrollIntoView({ behavior: "smooth" });
