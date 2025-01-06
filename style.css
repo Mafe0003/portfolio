@@ -170,6 +170,13 @@ nav {
   }
 }
 
+/* ????????? */
+body {
+  max-inline-size: 1500px;
+  margin-inline: auto;
+  padding: 0;
+}
+
 body,
 html {
   height: 100%;
