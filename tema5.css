@@ -1,25 +1,9 @@
-/* FONTS 
-font-family: "Italiana", serif;
-font-family: "Just Me Again Down Here", serif; */
-
-/* COLOUR 
-background: #efefef;
-knapper og hover: #fdcc26;
-text: #444444;
-blå: #648ec5; */
-
-/* STØRRELSER 
-h1: 4rem/10rem
-h2: 2.5rem/3.5rem
-h3: 2rem/3rem
-p: 1.3rem (untaget for underoverskrift)
-*/
-
 main {
   background-color: #efefef;
   font-family: "Italiana", serif;
 }
 
+/* GRID_2-5 (2 diver: waves - h1,h2,p og link til hjemmesiden)*/
 .grid_2-5 {
   display: grid;
   grid-template-columns: 2fr 5fr;
@@ -29,6 +13,7 @@ main {
   width: 100%;
 }
 
+/* GRID_1 (h1,h2,p og link til hjemmesiden)*/
 .grid_1 {
   text-align: center;
 }
@@ -49,174 +34,60 @@ main {
   color: #444444;
   text-align: left;
   padding-left: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
-/* BESØG HJEMMESIDE - STYLING OG HOVER*/
-
-.besøg {
-  font-family: "Just Me Again Down Here", serif;
-  font-size: 1.5rem;
-  color: #fdcc26;
-  cursor: pointer;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-  text-align: center;
-}
-
-.besøg:hover {
-  transform: scale(1.3);
-}
+/* "BESØG HJEMMESIDE" KNAP  - STYLING OG HOVER*/
 
 .knap {
-  font-family: "Just Me Again Down Here", serif;
-  font-size: 1.5rem;
-  color: #fdcc26;
-  cursor: pointer;
-  text-decoration: none;
   transition: transform 0.3s ease;
   text-align: center;
 }
 
 .knap a {
+  font-family: "Just Me Again Down Here", serif;
+  font-size: 1.6rem;
   color: #fdcc26;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .knap:hover {
   transform: scale(1.3);
 }
 
-@media screen and (min-width: 801px) {
-  .grid_2-5 img {
-    width: 65%;
-  }
-
-  .grid_1 {
-    margin-left: -6rem;
-  }
-  .grid_1 h1 {
-    font-size: 6rem;
-  }
-
-  .grid_1 h2 {
-    font-size: 3rem;
-    margin-top: -3.5rem;
-    padding: 0.5rem;
-  }
-
-  .grid_1 p {
-    color: #444444;
-    text-align: center;
-    padding-left: 1.5rem;
-  }
-
-  /* BESØG HJEMMESIDE - STYLING OG HOVER*/
-
-  .besøg {
-    font-size: 2rem;
-    transition: transform 0.3s ease;
-  }
-
-  .besøg:hover {
-    transform: scale(1.3);
-  }
-}
-
-/* GRID_1-3 */
-.styletile img {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.grid_3-3 img {
-  width: 100%;
-}
-
+/* GRID_1-3 (stor grid med hele process)*/
 .process {
   writing-mode: vertical-rl;
   text-orientation: upright;
   color: #648ec5;
-  font-family: "Italiana", serif;
   font-size: 2rem;
-  text-align: left;
 }
 
 .grid_1-3 {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  /* place-items: center; */
+  grid-template-columns: 1fr 3fr;
 }
 
 .liste p {
+  color: #444444;
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5rem;
-  margin-left: 0rem;
-  margin-top: 1rem;
+  /*margin-bottom på alle paragrafer med tekst i class="liste=*/
   margin-bottom: 2rem;
 }
 
-.grid_2-2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
-  margin: 2rem;
-  gap: 1rem;
-}
-.grid_2-2 img {
-  width: 80%;
-}
-.grid_2-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  /* align-items: center; */
-  gap: 10px;
-}
-.grid_2-1 img {
+/*GRID_3-3*/
+.grid_3-3 img {
   width: 100%;
 }
 
-.grid_1-1-1 img {
+.styletile img {
   width: 100%;
-}
-
-.grid_1-1-1 {
-  display: grid;
-  /* her vælger jeg at ukommenter "grid-template-columns: 1fr 1fr 1fr;"*/
-  gap: 10px;
-  margin: 1rem;
-}
-
-.grid_sound {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  margin: 1.5rem;
-}
-.image1 {
-  grid-column: span 2;
-}
-
-.image2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.image3 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.grid_2-3 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  gap: 10px;
-  margin: 1.5rem;
-}
-.grid_2-3 img {
-  width: 100%;
+  margin-top: 10px;
 }
 
 /* GRID_1-4 */
@@ -225,26 +96,21 @@ main {
   writing-mode: vertical-rl;
   text-orientation: upright;
   color: #648ec5;
-  font-family: "Italiana", serif;
   font-size: 2rem;
-  text-align: left;
 }
 
 .grid_1-4 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-top: 3rem;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 4rem;
   margin-bottom: 4rem;
-  /* text-align: center;
-  align-items: center; */
 }
 
 .liste2 p {
+  color: #444444;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5rem;
-  margin-left: 0rem;
-  margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -257,58 +123,79 @@ main {
   width: 75%;
 }
 
+/* RESPONSIV */
 @media screen and (min-width: 801px) {
-  /*GRID_3-3*/
-  .grid_3-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  .grid_2-5 img {
+    width: 65%;
   }
 
-  .process {
+  .grid_1 {
+    /* vil gerne centrere teksten med hensyn til at billede til venstre ikke fylder 100%; derfor skal margin-left være i minus*/
+    margin-left: -6rem;
+    margin-right: 2rem;
+  }
+
+  .grid_1 h1 {
+    font-size: 6rem;
+  }
+
+  .grid_1 h2 {
+    font-size: 3rem;
+    margin-top: -3.5rem;
+  }
+
+  .grid_1 p {
+    color: #444444;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  .knap {
+    margin-top: 2rem;
+  }
+  .knap a {
+    font-size: 2rem;
+  }
+
+  .process,
+  .løsning {
     font-size: 4rem;
-    text-align: left;
+  }
+
+  .liste p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .grid_1-3 {
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .liste {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .liste p {
-    font-size: 1.6rem;
-    line-height: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    grid-template-columns: 1fr 4fr;
   }
 
-  .grid_2-1 {
+  /*GRID_3-3*/
+  .grid_3-3 {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-right: 0.5rem;
+  }
+
+  .styletile {
+    padding-right: 1.5rem;
   }
 
   /* GRID_1-4 */
-
-  .løsning {
-    font-size: 4rem;
-    text-align: left;
-  }
-
-  .liste2 {
-    text-align: center;
-  }
-
   .liste2 p {
-    font-size: 1.6rem;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     margin-top: 4rem;
-    margin-bottom: 4rem;
   }
 
   .grid_waves img {
-    width: 60%;
+    width: 65%;
   }
 }

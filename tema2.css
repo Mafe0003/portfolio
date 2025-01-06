@@ -57,7 +57,7 @@ main {
   transform: scale(1.3);
 }
 
-/* GRID_1-3 (stor grid med hele process*/
+/* GRID_1-3 (stor grid med hele process)*/
 
 .process {
   writing-mode: vertical-rl;
@@ -81,6 +81,7 @@ main {
   margin-bottom: 2rem;
 }
 
+/* GRID_2-2 */
 .grid_2-2 {
   display: grid;
   grid-template-columns: 1fr;
@@ -111,7 +112,6 @@ main {
 
 .grid_1-1-1 {
   display: grid;
-  /* her vælger jeg at ukommenter "grid-template-columns: 1fr 1fr 1fr;"*/
   grid-template-columns: 1fr 1fr;
   gap: 5px;
   margin-bottom: 2rem;
