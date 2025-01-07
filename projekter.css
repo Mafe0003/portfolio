@@ -1,20 +1,3 @@
-/* FONTS 
-font-family: "Italiana", serif;
-font-family: "Just Me Again Down Here", serif; */
-
-/* COLOUR 
-background: #efefef;
-knapper og hover: #fdcc26;
-text: #444444;
-blå: #648ec5; */
-
-/* STØRRELSER 
-h1: 4rem/10rem
-h2: 2.5rem/3.5rem
-h3: 2rem/3rem
-p: 1.3rem (untaget for underoverskrift)
-*/
-
 main {
   background-color: #efefef;
   min-height: 304svh;
